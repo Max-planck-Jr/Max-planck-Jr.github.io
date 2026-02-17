@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labs — Guy Junior NKOM TAKEU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0e14;
+      --surface: #0d1117;
+      --border: #21262d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #3fb950;
+      --accent-dim: #238636;
+      --glow: rgba(63, 185, 80, 0.15);
+      --font-sans: 'Outfit', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; overflow-x: hidden; }
+    .bg-pattern {
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(33, 38, 45, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(33, 38, 45, 0.4) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .navbar {
+      position: relative; z-index: 1; max-width: 720px; margin: 0 auto;
+      padding: 1.25rem 1.5rem 0; border-bottom: 1px solid var(--border); margin-bottom: 0;
+    }
+    .navbar-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; }
+    .navbar a {
+      font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500;
+      color: var(--text-muted); text-decoration: none; padding: 0.5rem 0;
+      border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s;
+    }
+    .navbar a:hover { color: var(--text); }
+    .navbar a.active { color: var(--accent); border-bottom-color: var(--accent); }
+    header { margin-bottom: 4rem; padding-top: 2rem; }
+    .page-title { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+    section { margin-bottom: 3rem; }
+    section h2 {
+      font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+    }
+    .intro { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 60ch; }
+    .cards { display: grid; gap: 1rem; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+      padding: 1.25rem 1.5rem; transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { border-color: var(--accent-dim); box-shadow: 0 0 0 1px var(--accent-dim), 0 4px 24px var(--glow); }
+    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text); }
+    .card p { font-size: 0.9rem; color: var(--text-muted); }
+    footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.85rem; color: var(--text-muted); }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern" aria-hidden="true"></div>
+  <nav class="navbar" aria-label="Main">
+    <div class="navbar-inner">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="labs.html" class="active">Labs</a>
+      <a href="about.html">About me</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="container">
+    <header>
+      <h1 class="page-title">Labs</h1>
+      <p class="intro">Hands-on labs and exercises in network security, pentesting, and defensive operations.</p>
+    </header>
+    <section aria-labelledby="labs-heading">
+      <h2 id="labs-heading">Lab environments</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Lab placeholder</h3>
+          <p>Describe a lab: objective, tools used, and outcomes. Link to write-ups or repos if you have them.</p>
+        </div>
+        <div class="card">
+          <h3>Another lab</h3>
+          <p>Use this card as a template. Add your real lab write-ups and links here.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Guy Junior NKOM TAKEU · Cyber Security Engineer</p>
+      <p><a href="https://github.com/Max-planck-Jr">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>

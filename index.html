@@ -60,6 +60,44 @@
       padding: 3rem 1.5rem 4rem;
     }
 
+    /* Navbar */
+    .navbar {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0;
+    }
+
+    .navbar-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 1.5rem;
+    }
+
+    .navbar a {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 0.5rem 0;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .navbar a:hover {
+      color: var(--text);
+    }
+
+    .navbar a.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
     /* Header */
     header {
       margin-bottom: 4rem;
@@ -235,6 +273,16 @@
 </head>
 <body>
   <div class="bg-pattern" aria-hidden="true"></div>
+  <nav class="navbar" aria-label="Main">
+    <div class="navbar-inner">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="labs.html">Labs</a>
+      <a href="about.html">About me</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
   <div class="container">
     <header>
       <div class="header-inner">
