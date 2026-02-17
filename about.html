@@ -62,6 +62,9 @@
     }
     .intro { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 60ch; }
     .intro strong { color: var(--text); }
+    .bio { max-width: 60ch; }
+    .bio p { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.25rem; }
+    .bio p strong { color: var(--text); }
     .edu-list { list-style: none; }
     .edu-list li { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
     .edu-list li:last-child { border-bottom: none; }
@@ -95,31 +98,55 @@
         <img class="avatar" src="images/me.jpg" alt="Guy Junior NKOM TAKEU" width="96" height="96">
         <div class="header-text">
           <h1 class="page-title">About me</h1>
-          <p class="subtitle">Cyber Security Engineer · NIST & security frameworks</p>
+          <p class="subtitle">Cyber Security Engineer</p>
         </div>
       </div>
     </header>
     <section aria-labelledby="about-heading">
       <h2 id="about-heading">Who I am</h2>
-      <p class="intro">
-        I’m <strong>Guy Junior NKOM TAKEU</strong>. I hold a <strong>Master’s in Cyber Security</strong> and a <strong>Master’s in Information Systems & Software Engineering</strong>. I’m passionate about <strong>securing corporate networks</strong>, <strong>implementing security policies</strong>, and <strong>standardizing security controls</strong> using frameworks like <strong>NIST</strong>. I combine technical depth with a structured approach to risk and compliance.
-      </p>
+      <div class="bio">
+        <p>
+          I began my academic journey in software engineering, where I earned a <strong>Bachelor’s degree in Software Engineering</strong> followed by a <strong>Master’s degree in Information Systems and Software Engineering</strong>. During this period, I completed several internships and worked on multiple projects focused primarily on backend and server-side development.
+        </p>
+        <p>
+          My professional experience includes the design and implementation of payment integration modules for television and telecommunications subscriptions, the development of e-commerce platforms using Java Spring Boot, and the creation of software solutions for food delivery services. These projects were carried out in <strong>Cameroon</strong> and gave me strong practical experience in building and deploying real-world applications.
+        </p>
+        <p>
+          After completing my master’s degree, I co-founded a food delivery and IT services startup. Although I had limited experience in business and management at the time, our team successfully captured a significant share of the local food delivery market. However, operating and deploying production systems exposed us to several challenges, particularly related to security. We encountered vulnerabilities, insufficient secure coding practices, and gaps in security analysis, which ultimately resulted in compliance issues and financial penalties from regulatory authorities.
+        </p>
+        <p>
+          This experience fundamentally changed my perspective on technology and made me realize the critical importance of cybersecurity in modern digital systems. Motivated by this realization, I decided to specialize in cybersecurity and deepen my expertise in protecting information systems and infrastructures.
+        </p>
+        <p>
+          I then moved to <strong>Belgium</strong>, where I obtained a <strong>Master’s degree in Cybersecurity</strong>. This program focused on key areas such as risk management, security auditing, network protection, Industrial Control Systems (ICS) security, and security monitoring. During this program, I completed several practical projects and hands-on labs, many of which are presented in detail in this portfolio.
+        </p>
+        <p>
+          Today, I am deeply passionate about cybersecurity and motivated to build a career dedicated to protecting organizations against evolving cyber threats. With a strong foundation in software development and information systems, I bring a <strong>security-by-design</strong> mindset and a holistic understanding of how systems are built, deployed, and secured. I am committed to continuously learning and growing in this field, driven by the critical role cybersecurity plays in today’s increasingly digital and interconnected world.
+        </p>
+      </div>
     </section>
     <section aria-labelledby="education-heading">
       <h2 id="education-heading">Education</h2>
       <ul class="edu-list">
         <li>
+          <span class="edu-icon" aria-hidden="true">BSc</span>
+          <div class="edu-content">
+            <strong>Bachelor’s in Software Engineering</strong>
+            <span>Foundation in software development and backend systems.</span>
+          </div>
+        </li>
+        <li>
           <span class="edu-icon" aria-hidden="true">M1</span>
           <div class="edu-content">
-            <strong>Master’s in Cyber Security</strong>
-            <span>Security architecture, threat modeling, and defensive operations.</span>
+            <strong>Master’s in Information Systems & Software Engineering</strong>
+            <span>Systems design, software engineering, and IT–business alignment. Projects in payment integration, e-commerce (Java Spring Boot), and food delivery solutions.</span>
           </div>
         </li>
         <li>
           <span class="edu-icon" aria-hidden="true">M2</span>
           <div class="edu-content">
-            <strong>Master’s in Information Systems & Software Engineering</strong>
-            <span>Systems design, software engineering, and IT–business alignment.</span>
+            <strong>Master’s in Cybersecurity</strong>
+            <span>Belgium. Risk management, security auditing, network protection, ICS security, and security monitoring. Practical projects and labs featured in this portfolio.</span>
           </div>
         </li>
       </ul>
