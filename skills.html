@@ -92,36 +92,45 @@
   <div class="container">
     <header>
       <h1 class="page-title">Skills</h1>
-      <p class="intro">Technical and domain skills in cyber security, governance, and frameworks.</p>
+      <p class="intro">Entry-level cyber security engineer (Master’s degree 2025) with hands-on experience building labs, securing real environments, and turning theory into measurable impact for enterprises.</p>
     </header>
     <section aria-labelledby="skills-heading">
       <h2 id="skills-heading">Areas</h2>
       <div class="cards">
         <div class="card">
-          <h3>Network & infrastructure security</h3>
-          <p>Design and harden corporate networks, segmentation, monitoring, and incident response.</p>
+          <h3>Network defense, segmentation &amp; Zero Trust</h3>
+          <p>Design secure topologies, enforce least privilege on the network, and validate defenses through realistic attack traffic.</p>
           <ul>
-            <li>Network segmentation & zero trust</li>
-            <li>Firewalls, IDS/IPS, SIEM</li>
-            <li>Secure architecture design</li>
+            <li>Designed and implemented 5 dedicated Mininet-based labs (SDN firewall, ZTNA, DMZ+Snort, NSM, AI firewall) that model Internet, DMZ, SOC, and internal segments for enterprises.</li>
+            <li>Built and tuned multiple Linux firewall and SDN/OpenFlow rule sets to block port scans, floods, and lateral movement while keeping business traffic available.</li>
+            <li>Applied Zero Trust principles (identity-aware PEP, micro-segmentation, “never trust, always verify”) to protect critical apps such as Finance and CRM services.</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Security policies & governance</h3>
-          <p>Define and implement policies aligned with risk and regulation.</p>
+          <h3>SIEM, log pipelines &amp; monitoring</h3>
+          <p>Engineer log collection, parsing, and visualization so security teams see the right signals, not noise.</p>
           <ul>
-            <li>Policy drafting and lifecycle</li>
-            <li>Risk assessment & compliance</li>
-            <li>Security awareness programs</li>
+            <li>Improved a production EFK-based SIEM at Université Libre de Bruxelles by deploying and documenting Fluent Bit/Vector pipelines and custom Lua/YAML parsers for Microsoft 365, CAS, Palo Alto, and internal logs.</li>
+            <li>Built Kibana data views and dashboards that centralize multiple log sources, helping analysts investigate incidents faster and reduce blind spots.</li>
+            <li>Created a full Mininet + Prometheus + Grafana lab to collect host and network metrics during scans, DoS tests, and lateral movement, illustrating how enterprises can deploy NSM step by step.</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Frameworks & standards</h3>
-          <p>Map and standardize controls using established frameworks.</p>
+          <h3>ICS / OT security &amp; cyber ranges</h3>
+          <p>Secure industrial control systems by simulating real processes, attacks, and defenses in a safe virtual environment.</p>
           <ul>
-            <li>NIST CSF, NIST SP 800-53</li>
-            <li>ISO 27001, CIS Controls</li>
-            <li>Control mapping & gap analysis</li>
+            <li>Co-authored a master’s thesis and built a full virtual ICS/SCADA testbed (OpenPLC, ScadaBR, Modbus/TCP, Docker) used for research and training on industrial security.</li>
+            <li>Implemented and studied several ICS attack classes (MITM on Modbus, unauthorized coil/register writes, PLC/SCADA compromise, DoS) and mapped mitigations to IEC 62443 and the Purdue model.</li>
+            <li>Added observability and anomaly detection with Grafana–Loki–Promtail and ML-based analysis, giving SOC teams a way to detect abnormal PLC and Modbus behavior before it impacts physical processes.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Programming, automation &amp; tooling</h3>
+          <p>Use code and automation to make security repeatable, testable, and easier to operate.</p>
+          <ul>
+            <li>Python for ICS simulators, security automation, and ML-based traffic classification; Bash for lab setup, data collection, and quick debugging.</li>
+            <li>Comfortable working in Linux-first environments with Docker, Vagrant, Git, and common security tools (Nmap, Wireshark, Snort, iptables, tcpdump).</li>
+            <li>Document projects with clear READMEs, reproducible steps, and diagrams so teams can reuse labs internally for onboarding, exercises, and PoCs.</li>
           </ul>
         </div>
       </div>
